@@ -1,0 +1,106 @@
+html, body {
+    height: 100%;
+}
+
+.text-bg-title {
+    color: #fff !important;
+    background-color: RGBA(43, 47, 51, var(--bs-bg-opacity, 1));
+!important
+}
+
+.message-time {
+    font-size: x-small;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.message-text {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.message {
+    width: 100%;
+    color: #719eff;
+    float: left;
+    text-align: left;
+}
+
+.message > div {
+    width: auto;
+    float: left;
+}
+
+.message > div > .message-time {
+    float: left;
+}
+
+.message > div > .message-text {
+    float: right;
+}
+
+.my-message {
+    color: #C623FF;
+    float: right;
+    text-align: right;
+}
+
+.my-message > div {
+    width: auto;
+    float: right;
+}
+
+.my-message > div > .message-time {
+    float: right;
+}
+
+.my-message > div > .message-text {
+    float: left;
+}
+
+.choose-dialog-label {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 7px;
+    user-select: none;
+}
+
+.avatar-container {
+    display: inline-block;
+    position: relative;
+}
+
+.unread-count {
+    font-size: xx-small !important;
+    top: -15%;
+    right: 10%;
+    animation: fade 0.25s linear;
+    position: absolute;
+}
+
+.status-indicator {
+    font-size: xx-small !important;
+    bottom: -10%;
+    right: 12%;
+    animation: fade 0.25s linear;
+    position: absolute;
+    background-color: #19FF00;
+    color: #19FF00 !important;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+#dialogsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.message-text-preview {
+    color: #949494;
+}
